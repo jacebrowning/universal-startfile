@@ -32,11 +32,11 @@ $ poetry add universal-startfile
 
 ## Usage
 
-After installation, use the `startfile` function:
+After installation, import the `startfile` function:
 
-```text
-$ python
->>> from startfile import startfile
->>> startfile("~/Downloads/example.png")
->>> startfile("http://example.com)
+```python
+from startfile import startfile
+
+startfile("~/Downloads/example.png")
+startfile("http://example.com")
 ```
