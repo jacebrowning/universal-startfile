@@ -174,7 +174,7 @@ $(PACKAGE).spec:
 upload: dist ## Upload the current version to PyPI
 	git diff --name-only --exit-code
 	poetry publish
-	bin/open https://pypi.org/project/$(PACKAGE)
+	bin/open https://pypi.org/project/universal-$(PACKAGE)
 
 # CLEANUP #####################################################################
 

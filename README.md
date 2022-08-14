@@ -1,6 +1,6 @@
 # Overview
 
-A cross-platform version of [os.startfile](https://docs.python.org/3/library/os.html#os.startfile) from the standard library.
+A cross-platform version of [os.startfile](https://docs.python.org/3/library/os.html#os.startfile) from the standard library. This emulates double-clicking on a file or single-clicking a URL in an operating system's UI.
 
 [![Unix Build Status](https://img.shields.io/github/workflow/status/jacebrowning/universal-startfile/main)](https://github.com/jacebrowning/universal-startfile/actions)
 [![Windows Build Status](https://img.shields.io/appveyor/ci/jacebrowning/universal-startfile.svg?label=windows)](https://ci.appveyor.com/project/jacebrowning/universal-startfile)
