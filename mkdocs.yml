@@ -1,0 +1,19 @@
+site_name: universal-startfile
+site_description: Sample project generated from Jace's Python Template.
+site_author: Jace Browning
+
+repo_url: https://github.com/jacebrowning/universal-startfile
+edit_uri: https://github.com/jacebrowning/universal-startfile/edit/main/docs
+
+theme: readthedocs
+
+markdown_extensions:
+  - codehilite
+
+nav:
+  - Home: index.md
+  - Advanced: advanced.md
+  - About:
+    - Release Notes: about/changelog.md
+    - Contributor Guide: about/contributing.md
+    - License: about/license.md
