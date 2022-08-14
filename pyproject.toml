@@ -4,12 +4,12 @@ name = "universal-startfile"
 version = "0.0.1"
 description = "A cross-platform version of `os.startfile` from the standard library."
 
-license = "MIT"
+packages = [{ include = "startfile" }]
 
+license = "MIT"
 authors = ["Jace Browning <jacebrowning@gmail.com>"]
 
 readme = "README.md"
-
 homepage = "https://pypi.org/project/startfile"
 documentation = "https://startfile.readthedocs.io"
 repository = "https://github.com/jacebrowning/universal-startfile"
