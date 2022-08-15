@@ -1,7 +1,7 @@
 [tool.poetry]
 
 name = "universal-startfile"
-version = "0.0.1"
+version = "0.1"
 description = "A cross-platform version of `os.startfile` from the standard library."
 
 packages = [{ include = "startfile" }]
@@ -14,16 +14,23 @@ homepage = "https://pypi.org/project/startfile"
 documentation = "https://startfile.readthedocs.io"
 repository = "https://github.com/jacebrowning/universal-startfile"
 
-keywords = [
-]
+keywords = ["files", "startfile", "utilities"]
 classifiers = [
-    # TODO: update this list to match your application: https://pypi.org/pypi?%3Aaction=list_classifiers
-    "Development Status :: 1 - Planning",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
     "Natural Language :: English",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Desktop Environment :: File Managers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
 ]
 
 [tool.poetry.dependencies]

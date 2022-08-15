@@ -11,8 +11,7 @@ markdown_extensions:
   - codehilite
 
 nav:
-  - Home: index.md
-  - Advanced: advanced.md
+  - Overview: index.md
   - About:
     - Release Notes: about/changelog.md
     - Contributor Guide: about/contributing.md
