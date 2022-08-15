@@ -5,7 +5,6 @@ A cross-platform version of [os.startfile](https://docs.python.org/3/library/os.
 [![Unix Build Status](https://img.shields.io/github/workflow/status/jacebrowning/universal-startfile/main)](https://github.com/jacebrowning/universal-startfile/actions)
 [![Windows Build Status](https://img.shields.io/appveyor/ci/jacebrowning/universal-startfile.svg?label=windows)](https://ci.appveyor.com/project/jacebrowning/universal-startfile)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/jacebrowning/universal-startfile)](https://codecov.io/gh/jacebrowning/universal-startfile)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/jacebrowning/universal-startfile.svg)](https://scrutinizer-ci.com/g/jacebrowning/universal-startfile)
 [![PyPI License](https://img.shields.io/pypi/l/universal-startfile.svg)](https://pypi.org/project/universal-startfile)
 [![PyPI Version](https://img.shields.io/pypi/v/universal-startfile.svg)](https://pypi.org/project/universal-startfile)
 [![PyPI Downloads](https://img.shields.io/pypi/dm/universal-startfile.svg?color=orange)](https://pypistats.org/packages/universal-startfile)
