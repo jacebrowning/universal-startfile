@@ -25,7 +25,7 @@ def startfile(value: Union[str, Path]):
 
 
 def startfile_macos(path: str):
-    subprocess.call(("open", path))
+    return subprocess.call(("open", path))
 
 
 def startfile_windows(path: str):
