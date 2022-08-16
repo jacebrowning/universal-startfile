@@ -1,4 +1,4 @@
-PACKAGE := startfile
+PACKAGE := src/startfile
 MODULES := $(wildcard $(PACKAGE)/*.py)
 
 # MAIN TASKS ##################################################################
@@ -174,7 +174,7 @@ $(PACKAGE).spec:
 upload: dist ## Upload the current version to PyPI
 	git diff --name-only --exit-code
 	poetry publish
-	bin/open https://pypi.org/project/universal-$(PACKAGE)
+	bin/open https://pypi.org/project/universal-startfile
 
 # CLEANUP #####################################################################
 

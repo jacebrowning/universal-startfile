@@ -4,7 +4,7 @@ name = "universal-startfile"
 version = "0.1"
 description = "A cross-platform version of `os.startfile` from the standard library."
 
-packages = [{ include = "startfile" }]
+packages = [{ include = "startfile", from = "src" }]
 
 license = "MIT"
 authors = ["Jace Browning <jacebrowning@gmail.com>"]
