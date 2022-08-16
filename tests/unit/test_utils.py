@@ -17,5 +17,5 @@ def describe_startfile():
 
     @patch("webbrowser.open")
     def with_url(mock_open, expect):
-        startfile("http://exaple.com")
+        startfile("http://example.com")
         expect(mock_open.call_count) == 1
