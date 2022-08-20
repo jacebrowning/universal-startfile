@@ -1,5 +1,5 @@
 PROJECT := universal-startfile
-PACKAGE := startfile
+PACKAGE := src/startfile
 MODULES := $(wildcard $(PACKAGE)/*.py)
 
 # MAIN TASKS ##################################################################
