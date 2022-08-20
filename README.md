@@ -1,6 +1,13 @@
 # Overview
 
-A cross-platform version of [os.startfile](https://docs.python.org/3/library/os.html#os.startfile) from the standard library. This emulates double-clicking a file or single-clicking a URL in an operating system's UI to open the default program.
+This is a cross-platform version of the [os.startfile](https://docs.python.org/3/library/os.html#os.startfile) function in the Python standard library.
+
+It emulates the following actions in an operating system's UI:
+
+- double-clicking a file 
+- single-clicking a URL
+
+which will open the default program associated with that type.
 
 [![Unix Build Status](https://img.shields.io/github/workflow/status/jacebrowning/universal-startfile/main)](https://github.com/jacebrowning/universal-startfile/actions)
 [![Windows Build Status](https://img.shields.io/appveyor/ci/jacebrowning/universal-startfile.svg?label=windows)](https://ci.appveyor.com/project/jacebrowning/universal-startfile)
