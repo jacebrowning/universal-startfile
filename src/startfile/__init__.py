@@ -1,11 +1,11 @@
-from pkg_resources import DistributionNotFound, get_distribution
+from importlib.metadata import PackageNotFoundError, version
 
 from .utils import startfile
 
 try:
-    __version__ = get_distribution("universal-startfile").version
-except DistributionNotFound:
+    __version__ = version("universal-startfile")
+except PackageNotFoundError:
     __version__ = "(local)"
 
-del DistributionNotFound
-del get_distribution
+del PackageNotFoundError
+del version
