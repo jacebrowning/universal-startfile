@@ -9,7 +9,7 @@ It emulates the following actions in an operating system's UI:
 
 which will open the default program associated with that type.
 
-[![Unix Build Status](https://img.shields.io/github/workflow/status/jacebrowning/universal-startfile/main)](https://github.com/jacebrowning/universal-startfile/actions)
+[![Unix Build Status](https://img.shields.io/github/actions/workflow/status/jacebrowning/universal-startfile/main.yml?branch=main&label=linux)](https://github.com/jacebrowning/universal-startfile/actions)
 [![Windows Build Status](https://img.shields.io/appveyor/ci/jacebrowning/universal-startfile.svg?label=windows)](https://ci.appveyor.com/project/jacebrowning/universal-startfile)
 [![Coverage Status](https://img.shields.io/codecov/c/gh/jacebrowning/universal-startfile)](https://codecov.io/gh/jacebrowning/universal-startfile)
 [![PyPI License](https://img.shields.io/pypi/l/universal-startfile.svg)](https://pypi.org/project/universal-startfile)
