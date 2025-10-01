@@ -11,7 +11,7 @@ all: install
 ci: format check test mkdocs ## Run all tasks that determine CI status
 
 .PHONY: dev
-dev: install .clean-test ## Continuously run all CI tasks when files chanage
+dev: install .clean-test ## Continuously run all CI tasks when files change
 	poetry run sniffer
 
 .PHONY: run
