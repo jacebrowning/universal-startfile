@@ -3,16 +3,24 @@ name: main
 on: [push]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
+  os-python-matrix:
     strategy:
       matrix:
+        os:
+          - name: macos
+            icon: 🍏
+          - name: ubuntu
+            icon: 🐧
+          - name: windows
+            icon: 🪟
         python-version:
           - "3.9"
           - "3.10"
           - "3.12"
           - "3.13"
+
+    runs-on: ${{ matrix.os.name }}-latest
+    name: ${{ matrix.os.icon }} Python ${{ matrix.python-version }}
 
     steps:
     - uses: actions/checkout@v4
