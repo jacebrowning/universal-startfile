@@ -6,7 +6,7 @@ from startfile import startfile
 
 
 def describe_startfile():
-    @patch("subprocess.call")
+    @patch("subprocess.run")
     @patch("os.startfile", create=True)
     def with_file(mock_startfile, mock_call, tmp_path, expect):
         path = tmp_path / "example.txt"
