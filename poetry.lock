@@ -242,21 +242,21 @@ toml = ["tomli ; python_full_version <= \"3.11.0a6\""]
 
 [[package]]
 name = "coveragespace"
-version = "5.0"
+version = "6.1"
 description = "A place to track your code coverage metrics."
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = "<4.0,>=3.8"
 groups = ["dev"]
 files = [
-    {file = "coveragespace-5.0-py3-none-any.whl", hash = "sha256:b1ffa5dc1e6b4f1e64c764a676c6ec3bd875448942d441c307c338086f2c8f4c"},
-    {file = "coveragespace-5.0.tar.gz", hash = "sha256:7cc03a8f380922d993f43e67009d35886702342ac08aabd6467a1b4e2e059ce9"},
+    {file = "coveragespace-6.1-py3-none-any.whl", hash = "sha256:ca6ccd5eb32eb6ce5fe78de6c052353b9fbb378a886fde0838480defe33406a8"},
+    {file = "coveragespace-6.1.tar.gz", hash = "sha256:049c0b7b629ad43d72692f0f99b9f8a97936ad596f7f27c1af61323fba90ebef"},
 ]
 
 [package.dependencies]
 colorama = ">=0.4"
 coverage = ">=4.0"
 docopt = ">=0.6"
-minilog = ">=2.0,<3.0"
+minilog = ">=2.0"
 requests = ">=2.28,<3.0"
 
 [[package]]
@@ -1525,4 +1525,4 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.9"
-content-hash = "1d40219ae888749766221d33190c5dd1ae6e35189fc96d43905ab0c5a3e9baee"
+content-hash = "44a8e97b2fcba5bf0392cb2d2762770ef69b72a39db369471a7cec5847e62f63"
