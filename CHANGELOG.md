@@ -1,6 +1,6 @@
 # Release Notes
 
-## 0.3 (unreleased)
+## 0.3 (2025-10-02)
 
 - Dropped support for Python 3.8.
 
