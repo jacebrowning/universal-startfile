@@ -73,6 +73,7 @@ ipython = "^7.12.0"
 
 # Indirect dependencies
 pyyaml = ">6.0.0" # Installing pyyaml 6.0 fails on Python 3.12 and later
+dill = "*" # Required by old versions of pylint
 
 [tool.black]
 
