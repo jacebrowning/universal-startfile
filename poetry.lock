@@ -492,14 +492,14 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "macfsevents"
-version = "0.8.1"
+version = "0.8.4"
 description = "Thread-based interface to file system observation primitives."
 optional = false
 python-versions = "*"
 groups = ["dev"]
 markers = "sys_platform == \"darwin\""
 files = [
-    {file = "MacFSEvents-0.8.1.tar.gz", hash = "sha256:1324b66b356051de662ba87d84f73ada062acd42b047ed1246e60a449f833e10"},
+    {file = "MacFSEvents-0.8.4.tar.gz", hash = "sha256:bf7283f1d517764ccdc8195b21631dbbac1c506b920bf9a8ea2956b3127651cb"},
 ]
 
 [[package]]
@@ -1522,4 +1522,4 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.8"
-content-hash = "4dec98a266aedd4e99d87f1a9680a326e7e03deab12a23c3824b92ac98cba52e"
+content-hash = "54b9bc6a795c2129fa1e4013e2d59220316e1fe8ec4ade29699de5b5ce1a6e93"
