@@ -19,6 +19,10 @@ jobs:
           - "3.10"
           - "3.12"
           - "3.13"
+        exclude: # Installing MacFSEvents fails using Python 3.13.
+          - os:
+              name: macos
+            python-version: "3.13"
 
     runs-on: ${{ matrix.os.name }}-latest
     name: ${{ matrix.os.icon }} Python ${{ matrix.python-version }}
