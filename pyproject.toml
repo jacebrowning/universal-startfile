@@ -51,7 +51,7 @@ pylint = ">=2.12.2,<3.4.0"
 types-setuptools = "*"
 
 # Testing
-pytest = "^6.2"
+pytest = ">=6.2,<9.0"
 pytest-describe = "^2.0"
 pytest-expecter = "^3.0"
 pytest-random = "*"
