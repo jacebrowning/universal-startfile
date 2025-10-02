@@ -67,7 +67,7 @@ pygments = "^2.11.1"
 # Tooling
 pyinstaller = "*"
 sniffer = "*"
-MacFSEvents = { version = "*", platform = "darwin" }
+MacFSEvents = { version = ">=0.8.4", platform = "darwin" }
 pync = { version = "*", platform = "darwin" }
 ipython = "^7.12.0"
 
