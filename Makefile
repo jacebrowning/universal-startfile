@@ -44,12 +44,14 @@ $(DEPENDENCIES): poetry.lock docs/requirements.txt
 
 ifndef CI
 poetry.lock: pyproject.toml
-	poetry lock --no-update
+	poetry lock
 	@ touch $@
 docs/requirements.txt: poetry.lock
-	@ poetry export --dev --without-hashes | grep mkdocs > $@
-	@ poetry export --dev --without-hashes | grep pygments >> $@
-	@ poetry export --dev --without-hashes | grep jinja2 >> $@
+	@ rm -f $@
+	@ poetry export --all-groups --without-hashes | grep jinja2 >> $@
+	@ poetry export --all-groups --without-hashes | grep markdown >> $@
+	@ poetry export --all-groups --without-hashes | grep mkdocs >> $@
+	@ poetry export --all-groups --without-hashes | grep pygments >> $@
 endif
 
 .cache:
