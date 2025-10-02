@@ -53,7 +53,7 @@ pytest = "^6.2"
 pytest-describe = "^2.0"
 pytest-expecter = "^3.0"
 pytest-random = "*"
-pytest-cov = "^2.12"
+pytest-cov = "^6.3"
 freezegun = "*"
 
 # Reports
