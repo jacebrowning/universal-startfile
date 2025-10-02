@@ -1,6 +1,6 @@
 name: main
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -18,7 +18,8 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - uses: Gr1N/setup-poetry@v9
+    - name: Install Poetry
+      run: curl -sSL https://install.python-poetry.org | python3 -
 
     - name: Check dependencies
       run: make doctor
@@ -31,14 +32,15 @@ jobs:
     - name: Install dependencies
       run: make install
 
-    - name: Check code
-      run: make check
-
     - name: Test code
       run: make test
 
     - name: Upload coverage
-      uses: codecov/codecov-action@v5
+      uses: codecov/codecov-action@v4
+      if: steps.fork-check.outputs.is-fork == 'false'
       with:
         fail_ci_if_error: true
         token: ${{ secrets.CODECOV_TOKEN }}
+
+    - name: Check code
+      run: make check
