@@ -20,7 +20,7 @@ which will open the default program associated with that type.
 
 ### Requirements
 
-* Python 3.7+
+* Python 3.9+
 
 ### Installation
 
