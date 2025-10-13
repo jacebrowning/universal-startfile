@@ -479,21 +479,22 @@ test = ["ipykernel", "nbformat", "nose (>=0.10.1)", "numpy (>=1.17)", "pygments"
 
 [[package]]
 name = "isort"
-version = "5.10.1"
+version = "6.1.0"
 description = "A Python utility / library to sort Python imports."
 optional = false
-python-versions = ">=3.6.1,<4.0"
+python-versions = ">=3.9.0"
 groups = ["dev"]
 files = [
-    {file = "isort-5.10.1-py3-none-any.whl", hash = "sha256:6f62d78e2f89b4500b080fe3a81690850cd254227f27f75c3a0c491a1f351ba7"},
-    {file = "isort-5.10.1.tar.gz", hash = "sha256:e8443a5e7a020e9d7f97f1d7d9cd17c88bcb3bc7e218bf9cf5095fe550be2951"},
+    {file = "isort-6.1.0-py3-none-any.whl", hash = "sha256:58d8927ecce74e5087aef019f778d4081a3b6c98f15a80ba35782ca8a2097784"},
+    {file = "isort-6.1.0.tar.gz", hash = "sha256:9b8f96a14cfee0677e78e941ff62f03769a06d412aabb9e2a90487b3b7e8d481"},
 ]
 
+[package.dependencies]
+importlib-metadata = {version = ">=4.6.0", markers = "python_version < \"3.10\""}
+
 [package.extras]
-colors = ["colorama (>=0.4.3,<0.5.0)"]
-pipfile-deprecated-finder = ["pipreqs", "requirementslib"]
+colors = ["colorama"]
 plugins = ["setuptools"]
-requirements-deprecated-finder = ["pip-api", "pipreqs"]
 
 [[package]]
 name = "jedi"
@@ -1536,4 +1537,4 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.9"
-content-hash = "fa7697e492c092cd8d90baf048d2008b05b587825b826ee6379096e4247a89c2"
+content-hash = "c160ca69db61a45076b3c9a40464d76a4f7fab80cffabf7614a69d3ef468618a"
