@@ -1,6 +1,6 @@
 import os
-import platform
 import subprocess
+import sys
 import webbrowser
 from pathlib import Path
 from typing import Union
@@ -15,10 +15,10 @@ def startfile(value: Union[str, Path]):
 
     path = value
 
-    if platform.system() == "Darwin":
+    if sys.platform == "darwin":
         return startfile_macos(path)
 
-    if platform.system() == "Windows":
+    if sys.platform == "win32":
         return startfile_windows(path)
 
     return startfile_linux(path)
