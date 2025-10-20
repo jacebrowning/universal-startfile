@@ -1,8 +1,9 @@
 # Release Notes
 
-## 0.4 (unreleased)
+## 0.4 (2025-10-20)
 
 - Added exception when files cannot be found or opened.
+- Added support for Python 3.11, 3.12, 3.13, and 3.14.
 
 ## 0.3 (2025-10-02)
 

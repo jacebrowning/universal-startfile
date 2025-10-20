@@ -1,7 +1,7 @@
 [tool.poetry]
 
 name = "universal-startfile"
-version = "0.3"
+version = "0.4"
 description = "A cross-platform version of 'os.startfile' from the standard library."
 
 packages = [{ include = "startfile", from = "src" }]

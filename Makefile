@@ -5,10 +5,7 @@ MODULES := $(wildcard $(PACKAGE)/*.py)
 # MAIN TASKS ##################################################################
 
 .PHONY: all
-all: install
-
-.PHONY: ci
-ci: format check test mkdocs ## Run all tasks that determine CI status
+all: format check test mkdocs ## Run all tasks that determine CI status
 
 .PHONY: dev
 dev: install .clean-test ## Continuously run all CI tasks when files change
@@ -127,7 +124,7 @@ read-coverage:
 MKDOCS_INDEX := site/index.html
 
 .PHONY: docs
-docs: mkdocs uml ## Generate documentation and UML
+docs: mkdocs ## Generate documentation
 ifndef CI
 	@ eval "sleep 3; bin/open http://127.0.0.1:8000" &
 	poetry run mkdocs serve
@@ -142,13 +139,6 @@ $(MKDOCS_INDEX): mkdocs.yml docs/*.md
 	@ cd docs/about && ln -sf ../../CONTRIBUTING.md contributing.md
 	@ cd docs/about && ln -sf ../../LICENSE.md license.md
 	poetry run mkdocs build --clean --strict
-
-.PHONY: uml
-uml: install docs/*.png
-docs/*.png: $(MODULES)
-	poetry run pyreverse $(PACKAGE) -p $(PACKAGE) -a 1 -f ALL -o png --ignore tests
-	- mv -f classes_$(PACKAGE).png docs/classes.png
-	- mv -f packages_$(PACKAGE).png docs/packages.png
 
 # BUILD #######################################################################
 
@@ -207,7 +197,7 @@ clean-all: clean
 # HELP ########################################################################
 
 .PHONY: help
-help: all
+help: install
 	@ grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 .DEFAULT_GOAL := help
