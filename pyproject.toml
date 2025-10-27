@@ -53,7 +53,7 @@ types-setuptools = "*"
 
 # Testing
 pytest = ">=6.2,<9.0"
-pytest-describe = "^2.0"
+pytest-describe = ">=2,<4"
 pytest-expecter = "^3.0"
 pytest-random = "*"
 pytest-cov = ">=6.3,<8.0"
