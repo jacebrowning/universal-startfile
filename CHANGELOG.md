@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.4.1 (unreleased)
+
+- Dropped support for Python 3.9.
+
 ## 0.4 (2025-10-20)
 
 - Added exception when files cannot be found or opened.
