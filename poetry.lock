@@ -471,19 +471,18 @@ test-extra = ["curio", "ipython[test]", "jupyter_ai", "matplotlib (!=3.2.0)", "n
 
 [[package]]
 name = "isort"
-version = "6.1.0"
+version = "8.0.1"
 description = "A Python utility / library to sort Python imports."
 optional = false
-python-versions = ">=3.9.0"
+python-versions = ">=3.10.0"
 groups = ["dev"]
 files = [
-    {file = "isort-6.1.0-py3-none-any.whl", hash = "sha256:58d8927ecce74e5087aef019f778d4081a3b6c98f15a80ba35782ca8a2097784"},
-    {file = "isort-6.1.0.tar.gz", hash = "sha256:9b8f96a14cfee0677e78e941ff62f03769a06d412aabb9e2a90487b3b7e8d481"},
+    {file = "isort-8.0.1-py3-none-any.whl", hash = "sha256:28b89bc70f751b559aeca209e6120393d43fbe2490de0559662be7a9787e3d75"},
+    {file = "isort-8.0.1.tar.gz", hash = "sha256:171ac4ff559cdc060bcfff550bc8404a486fee0caab245679c2abe7cb253c78d"},
 ]
 
 [package.extras]
 colors = ["colorama"]
-plugins = ["setuptools"]
 
 [[package]]
 name = "jedi"
@@ -1666,4 +1665,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "442bb036853ece40ff4e8bdc942945887acfadbc0d99bedbc5bdc1ea4e34f07b"
+content-hash = "073bddf9f0ea56dd700d7ec6ca14422b9dc9670f6557bbbe339bef4e6e9d516b"
